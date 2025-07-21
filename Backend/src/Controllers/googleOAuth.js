@@ -1,5 +1,4 @@
 import asyncHandler from "express-async-handler"
-import { oauth2Client } from "../Utils/google.Config.js";
 import axios from "axios"
 import { google } from "googleapis";
 

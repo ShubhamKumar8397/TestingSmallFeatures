@@ -1,10 +1,13 @@
 import app from "./app.js";
+import init from "./client.redis.js";
 import connectDB from "./src/ConnectDB/connectDb.js";
 import dotenv from "dotenv"
 
 dotenv.config({
     path : './.env',
 })
+
+
 
 
 

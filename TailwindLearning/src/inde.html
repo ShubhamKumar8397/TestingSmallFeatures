@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <Link href="./output.css" rel="stylesheet" />
+</head>
+
+<body class="font-poppins m-0 p-0 ">
+    <!-- navBarr -->
+    <nav class="max-w-[1440px] mx-auto px-3 py-2 flex justify-between items-center ">
+
+        <!-- LOGO OF NavBar -->
+        <a href="#" id="brand" class="flex items-center">
+            <img src="../assets/asset 0.png" alt="">
+            <span class="font-medium text-lg">ToDesk</span>
+        </a>
+
+
+
+        <!-- List Items of Nav -->
+        <ul class="font-medium hidden lg:flex gap-10">
+            <li class="cursor-pointer  hover:text-blue-700 transition-all">Pricing</li>
+            <li class="cursor-pointer hover:text-blue-700 transition-all">Docs</li>
+            <li class="cursor-pointer hover:text-blue-700 transition-all">ChangeLog</li>
+            <li class="cursor-pointer hover:text-blue-700 transition-all">Blogs</li>
+            <li class="cursor-pointer hover:text-blue-700 transition-all">Login</li>
+        </ul>
+
+        <!-- Button Of Navbar Electron -->
+        <button
+            class="hidden lg:flex items-center gap-2 outline-none border-1 border-gray-400 hover:border-gray-600 transition-all cursor-pointer px-4 py-2 rounded-md">
+            <img src="../assets/asset 1.svg" alt="">
+            <span class="font-medium text-md ">Electron Developers</span>
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <!-- Mobile Hamburger -->
+        <button id="menuButton" class="cursor-pointer transition-all  lg:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-bars text-2xl"></i>
+        </button>
+
+        <!-- Nav Dialog Handle When Hamburger Click Show or hidden -->
+        <div id="nav-dialog" class="z-10 hidden fixed bg-white inset-0  transition-all">
+
+            <!-- Nav Dialog  NavBar For Mobile -->
+            <div  class=" flex justify-between items-center bg-white border-b-1 px-2 py-3  border-gray-300 shadow-lg">
+                <a href="#" id="brand" class="flex items-center">
+                    <img src="../assets/asset 0.png" alt="">
+                    <span class="font-medium text-lg">ToDesk</span>
+                </a>
+
+                <button id="menuButton" class="cursor-pointer transition-all block lg:hidden" onclick="handleMenu()">
+                    <i class="fa-solid fa-xmark text-2xl"></i>
+                </button>
+            </div>
+
+            <ul class="flex flex-col gap-4 p-3 mt-4 pl-6">
+                <li class="p-2 text-lg font-medium hover:text-blue-700 hover:bg-gray-50 rounded-lg transition-all cursor-pointer">Pricing</li>
+                <li class="p-2 text-lg font-medium hover:text-blue-700 hover:bg-gray-50 rounded-lg transition-all cursor-pointer">Docs</li>
+                <li class="p-2 text-lg font-medium hover:text-blue-700 hover:bg-gray-50 rounded-lg transition-all cursor-pointer">Changelog</li>
+                <li class="p-2 text-lg font-medium hover:text-blue-700 hover:bg-gray-50 rounded-lg transition-all cursor-pointer">Blog</li>
+                <li class="p-2 text-lg font-medium hover:text-blue-700 hover:bg-gray-50 rounded-lg transition-all cursor-pointer">Login</li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- Shadow Div Below Nav -->
+    <!-- <div class="h-[4px] bg-gray-50 shadow-custom"></div> -->
+     <div class="h-[4px] border-b-1 border-gray-200  shadow-custom"></div>
+
+    <!-- main Section Start Now -->
+    <main class="h-screen bg-gradient-to-br from-purple-100 via-orange-50 to-transparent max-w-[1440px] mx-auto ">
+
+        <!-- heroSection -->
+        <div id="hero-container" class="max-w-4xl mx-auto px-6 pt-10 flex flex-col justify-start md:items-center">
+
+            <!-- Version Button In Hero Section -->
+            <div class="cursor-pointer flex gap-2 items-center font-medium bg-amber-100 px-2 border-amber-600 border-1 rounded-md w-fit shadow-md hover:shadow-lg hover:-translate-y-1 transition duration-300 group">
+                <div class="w-2 h-2 rounded-full bg-amber-300 border-1 border-amber-500"></div>
+                <span class="text-amber-500">v0.21.1:</span>
+                <span class="text-amber-800">Find-in-one-First</span>
+                <i class="fa-solid fa-arrow-right text-amber-600 group-hover:translate-x-1 transition duration-300"></i>
+            </div>
+        </div>
+        
+    </main>
+
+
+</body>
+<script src="script.js"></script>
+
+</html>

@@ -1,2 +1,4 @@
-# TestingSmallFeatures
-All New Small Features That i Learn is Push In This Repo
+# All Small Features Available
+- Request Body Validator By Zod
+- Email Verification Otp In DB
+- Google Authetication Implement
